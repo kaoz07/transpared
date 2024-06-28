@@ -1,0 +1,7 @@
+{
+  "name": "transparencia",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
