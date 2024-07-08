@@ -1,7 +1,7 @@
 <ion-header>
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-button id="xd">
+      <ion-button id="xd" href="{{'home'}}">
         Regresar a Inicio
       </ion-button>
     </ion-buttons>
@@ -18,8 +18,60 @@
 
 <ion-content>
 
+  <style>
+    .content-wrapper {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      border-radius: 50px;
+      overflow: hidden;
+    }
+  
+    .content-wrapper::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('../../../assets/transparencia.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      opacity: 0.5;
+      z-index: 1;
+    }
+  
+    .text-container {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      text-align: center;
+      color: white;
+    }
+  
+    .main-text {
+      font-size: 2em;
+      margin-bottom: 20px;
+      background-color: #404040;
+      opacity: 0.8;
+      border-radius: 15px;
+      margin: 15px;
+      padding: 15px;
+    }
+  
+    ion-button {
+      font-weight: bold;
+      font-size: 1em;
+    }
+  </style>
+  
   <div class="content-wrapper">
-    <div class="text-container" id="tacos">
+    <div class="text-container">
       <p class="main-text">
         Descubre el destino de tus impuestos
       </p>
@@ -28,104 +80,105 @@
       </ion-button>
     </div>
   </div>
+  
 
   <ion-list id="estados">
-    <ion-item button (click)="navigateToState('Aguascalientes')">
+    <ion-button class="tacosxd" (click)="navigateToState('Aguascalientes')">
       Aguascalientes
-    </ion-item>
-    <ion-item button (click)="navigateToState('Baja California')">
+    </ion-button>
+    <ion-button class="tacosxd" (click)="navigateToState('Baja California')">
       Baja California
-    </ion-item>
-    <ion-item button (click)="navigateToState('Baja California Sur')">
+    </ion-button>
+    <ion-button class="tacosxd" (click)="navigateToState('Baja California Sur')">
       Baja California Sur
-    </ion-item>
-    <ion-item button (click)="navigateToState('Campeche')">
+    </ion-button>
+    <ion-button class="tacosxd" (click)="navigateToState('Campeche')">
       Campeche
-    </ion-item>
-    <ion-item button (click)="navigateToState('Coahuila')">
+    </ion-button>
+    <ion-button class="tacosxd" (click)="navigateToState('Coahuila')">
       Coahuila
-    </ion-item>
-    <ion-item button (click)="navigateToState('Colima')">
+    </ion-button>
+    <ion-button class="tacosxd" (click)="navigateToState('Colima')">
       Colima
-    </ion-item>
-    <ion-item button (click)="navigateToState('Chiapas')">
+    </ion-button>
+    <ion-button class="tacosxd" (click)="navigateToState('Chiapas')">
       Chiapas
-    </ion-item>
-    <ion-item button (click)="navigateToState('Chihuahua')">
+    </ion-button>
+    <ion-button class="tacosxd" (click)="navigateToState('Chihuahua')">
       Chihuahua
-    </ion-item>
-    <ion-item button (click)="navigateToState('Ciudad de México')">
+    </ion-button>
+    <ion-button class="tacosxd" (click)="navigateToState('Ciudad de México')">
       Ciudad de México
-    </ion-item>
-    <ion-item button (click)="navigateToState('Durango')">
+    </ion-button>
+    <ion-button class="tacosxd" (click)="navigateToState('Durango')">
       Durango
-    </ion-item>
-    <ion-item button (click)="navigateToState('Guanajuato')">
+    </ion-button>
+    <ion-button class="tacosxd" (click)="navigateToState('Guanajuato')">
       Guanajuato
-    </ion-item>
-    <ion-item button (click)="navigateToState('Guerrero')">
+    </ion-button>
+    <ion-button class="tacosxd" (click)="navigateToState('Guerrero')">
       Guerrero
-    </ion-item>
-    <ion-item button (click)="navigateToState('Hidalgo')">
+    </ion-button>
+    <ion-button class="tacosxd" (click)="navigateToState('Hidalgo')">
       Hidalgo
-    </ion-item>
-    <ion-item button (click)="navigateToState('Jalisco')">
+    </ion-button>
+    <ion-button class="tacosxd" (click)="navigateToState('Jalisco')">
       Jalisco
-    </ion-item>
-    <ion-item button (click)="navigateToState('Estado de México')">
+    </ion-button>
+    <ion-button class="tacosxd" (click)="navigateToState('Estado de México')">
       Estado de México
-    </ion-item>
-    <ion-item button (click)="navigateToState('Michoacán')">
+    </ion-button>
+    <ion-button class="tacosxd" (click)="navigateToState('Michoacán')">
       Michoacán
-    </ion-item>
-    <ion-item button (click)="navigateToState('Morelos')">
+    </ion-button>
+    <ion-button class="tacosxd" (click)="navigateToState('Morelos')">
       Morelos
-    </ion-item>
-    <ion-item button (click)="navigateToState('Nayarit')">
+    </ion-button>
+    <ion-button class="tacosxd" (click)="navigateToState('Nayarit')">
       Nayarit
-    </ion-item>
-    <ion-item button (click)="navigateToState('Nuevo León')">
+    </ion-button>
+    <ion-button class="tacosxd" (click)="navigateToState('Nuevo León')">
       Nuevo León
-    </ion-item>
-    <ion-item button (click)="navigateToState('Oaxaca')">
+    </ion-button>
+    <ion-button class="tacosxd" (click)="navigateToState('Oaxaca')">
       Oaxaca
-    </ion-item>
-    <ion-item button (click)="navigateToState('Puebla')">
+    </ion-button>
+    <ion-button class="tacosxd" (click)="navigateToState('Puebla')">
       Puebla
-    </ion-item>
-    <ion-item button (click)="navigateToState('Querétaro')">
+    </ion-button>
+    <ion-button class="tacosxd" (click)="navigateToState('Querétaro')">
       Querétaro
-    </ion-item>
-    <ion-item button (click)="navigateToState('Quintana Roo')">
+    </ion-button>
+    <ion-button class="tacosxd" (click)="navigateToState('Quintana Roo')">
       Quintana Roo
-    </ion-item>
-    <ion-item button (click)="navigateToState('San Luis Potosí')">
+    </ion-button>
+    <ion-button class="tacosxd" (click)="navigateToState('San Luis Potosí')">
       San Luis Potosí
-    </ion-item>
-    <ion-item button (click)="navigateToState('Sinaloa')">
+    </ion-button>
+    <ion-button class="tacosxd" (click)="navigateToState('Sinaloa')">
       Sinaloa
-    </ion-item>
-    <ion-item button (click)="navigateToState('Sonora')">
+    </ion-button>
+    <ion-button class="tacosxd" (click)="navigateToState('Sonora')">
       Sonora
-    </ion-item>
-    <ion-item button (click)="navigateToState('Tabasco')">
+    </ion-button>
+    <ion-button class="tacosxd" (click)="navigateToState('Tabasco')">
       Tabasco
-    </ion-item>
-    <ion-item button (click)="navigateToState('Tamaulipas')">
+    </ion-button>
+    <ion-button class="tacosxd" (click)="navigateToState('Tamaulipas')">
       Tamaulipas
-    </ion-item>
-    <ion-item button (click)="navigateToState('Tlaxcala')">
+    </ion-button>
+    <ion-button class="tacosxd" (click)="navigateToState('Tlaxcala')">
       Tlaxcala
-    </ion-item>
-    <ion-item button (click)="navigateToState('Veracruz')">
+    </ion-button>
+    <ion-button class="tacosxd" (click)="navigateToState('Veracruz')">
       Veracruz
-    </ion-item>
-    <ion-item button (click)="navigateToState('Yucatán')">
+    </ion-button>
+    <ion-button class="tacosxd" (click)="navigateToState('Yucatán')">
       Yucatán
-    </ion-item>
-    <ion-item button (click)="navigateToState('Zacatecas')">
+    </ion-button>
+    <ion-button class="tacosxd" (click)="navigateToState('Zacatecas')">
       Zacatecas
-    </ion-item>
+    </ion-button>
   </ion-list>
 
 </ion-content>

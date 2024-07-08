@@ -41,6 +41,7 @@ ion-content {
 #xd {
   --border-radius: 10px;
   --background: #722282;
+  font-weight: bold;
 }
 
 // #tacos {
@@ -88,12 +89,14 @@ ion-button {
   --color: #722282;
 }
 
-ion-item {
+.tacosxd {
   --background: #D8BFD8;
   --border-radius: 15px;
   --color: #722282;
-  width: calc(20% - 10px);
+  width: calc(25% - 10px);
   margin: 5px;
+  padding: 10px;
+  font-weight: bold;
 }
 
 ion-list {
